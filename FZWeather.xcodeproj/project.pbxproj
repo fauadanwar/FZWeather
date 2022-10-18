@@ -27,6 +27,7 @@
 		B45219C928FEA8E70090C2F7 /* FZCDSnowExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219C828FEA8E70090C2F7 /* FZCDSnowExtention.swift */; };
 		B45219CB28FEA9A50090C2F7 /* FZCDSysExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CA28FEA9A50090C2F7 /* FZCDSysExtention.swift */; };
 		B45219CD28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CC28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift */; };
+		B45219CF28FEB9AF0090C2F7 /* FZDeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */; };
 		B478F12428F6E6A300661BD5 /* FZWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F12328F6E6A300661BD5 /* FZWeatherApp.swift */; };
 		B478F12828F6E6A400661BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B478F12728F6E6A400661BD5 /* Assets.xcassets */; };
 		B478F12B28F6E6A400661BD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B478F12A28F6E6A400661BD5 /* Preview Assets.xcassets */; };
@@ -103,6 +104,7 @@
 		B45219C828FEA8E70090C2F7 /* FZCDSnowExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDSnowExtention.swift; sourceTree = "<group>"; };
 		B45219CA28FEA9A50090C2F7 /* FZCDSysExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDSysExtention.swift; sourceTree = "<group>"; };
 		B45219CC28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherBaseDataHandler.swift; sourceTree = "<group>"; };
+		B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZDeviceLocationService.swift; sourceTree = "<group>"; };
 		B478F12028F6E6A300661BD5 /* FZWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B478F12328F6E6A300661BD5 /* FZWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherApp.swift; sourceTree = "<group>"; };
 		B478F12728F6E6A400661BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				B478F1E628FC53E300661BD5 /* FZWebServiceUtility.swift */,
 				B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */,
 				B478F1E828FC582B00661BD5 /* FZGeocoderUtility.swift */,
+				B45219CE28FEB9AF0090C2F7 /* FZDeviceLocationService.swift */,
 				B478F15F28F6E74A00661BD5 /* Database */,
 			);
 			path = "Framework Layer";
@@ -498,6 +501,7 @@
 				B45219CD28FEACFA0090C2F7 /* FZWeatherBaseDataHandler.swift in Sources */,
 				B478F1D728FC337F00661BD5 /* FZCoord.swift in Sources */,
 				B4250A2528FEA0AD00526A67 /* FZCDDaysWeatherExtention.swift in Sources */,
+				B45219CF28FEB9AF0090C2F7 /* FZDeviceLocationService.swift in Sources */,
 				B478F1E128FC3AD600661BD5 /* FZSys.swift in Sources */,
 				B478F15728F6E6B600661BD5 /* FZCityWeatherView.swift in Sources */,
 				B4250A1728FDD94C00526A67 /* FZImageCachingUtility.swift in Sources */,
@@ -696,6 +700,7 @@
 				DEVELOPMENT_TEAM = 93FK67534U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location will get fetch to get weather Data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -725,6 +730,7 @@
 				DEVELOPMENT_TEAM = 93FK67534U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location will get fetch to get weather Data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

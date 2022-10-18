@@ -46,7 +46,7 @@ struct FZCityWeatherView: View {
                                 HStack {
                                     Text("City:")
                                     Spacer()
-                                    Text(viewModel.location)
+                                    Text(cityViewModel.name)
                                 }
                             }
                         }
