@@ -35,4 +35,35 @@ struct PersistenceController {
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
+    
+    func saveContext() {
+        if container.viewContext.hasChanges {
+            do {
+                try container.viewContext.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+
+    func fetchManagedObject<T: NSManagedObject>(managedObject: T.Type) -> [T]?
+    {
+        do {
+            guard let result = try container.viewContext.fetch(managedObject.fetchRequest()) as? [T] else {return nil
+
+            }
+
+            return result
+
+        } catch let error {
+            debugPrint(error)
+        }
+
+        return nil
+    }
+
+    func printDocumentDirectoryPath() {
+       debugPrint(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0])
+    }
 }

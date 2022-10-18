@@ -11,9 +11,8 @@ public enum FZWeatherError: Error {
     case error(_ errorString: String)
 }
 
-protocol FZCityWeatherInteractorProtocol {
+protocol FZCityWeatherInteractorProtocol: FZWeatherBaseDataHandlerProtocol {
     
-    func getWeather(location: String, completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void)
 }
 
 class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
