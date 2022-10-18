@@ -118,6 +118,34 @@
 			<key>uniqueIdentifier</key>
 			<string>0282352B-D57D-4843-9FFA-B2249B16297F</string>
 		</dict>
+		<key>0294C3AC-F479-4DE4-8A50-BD6552C8F6F1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0294C3AC-F479-4DE4-8A50-BD6552C8F6F1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50VmFyaWFudCI6eyJnZW5lcmljIjp7fX0sImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZmF1YWRhbndhclwvUHJvamVjdFwvRlpXZWF0aGVyXC9GWldlYXRoZXIueGNvZGVwcm9qIiwidHlwZSI6eyJibHVlcHJpbnQiOnt9fSwiYmx1ZXByaW50X2JsdWVwcmludElkZW50aWZpZXIiOiJCNDc4RjExRjI4RjZFNkEzMDA2NjFCRDUifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773689.57719195</real>
+			<key>timeStoppedRecording</key>
+			<real>687773690.344069</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>0294C3AC-F479-4DE4-8A50-BD6552C8F6F1</string>
+		</dict>
 		<key>02D45429-3975-4C78-91AE-8AF21FEE108F</key>
 		<dict>
 			<key>className</key>
@@ -649,6 +677,34 @@
 			<string>Build for Previews FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>0AF78A3C-C015-4A2D-8D6B-69C58A450239</string>
+		</dict>
+		<key>0B064D9A-DDA0-4EED-9E5B-854CF9D17565</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0B064D9A-DDA0-4EED-9E5B-854CF9D17565.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>687773665.36245704</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>0B064D9A-DDA0-4EED-9E5B-854CF9D17565</string>
 		</dict>
 		<key>0B0A353C-47E1-40CB-A382-C7C079B7B936</key>
 		<dict>
@@ -1322,6 +1378,34 @@
 			<key>uniqueIdentifier</key>
 			<string>168E60EC-8872-4565-819E-87277D129560</string>
 		</dict>
+		<key>1692C0DB-7EFD-4933-96B1-E754DC924F07</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1692C0DB-7EFD-4933-96B1-E754DC924F07.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX0sImJsdWVwcmludFByb3ZpZGVyX3Byb3ZpZGVyRmlsZVBhdGhTdHJpbmciOiJcL1VzZXJzXC9mYXVhZGFud2FyXC9Qcm9qZWN0XC9GWldlYXRoZXJcL0ZaV2VhdGhlci54Y29kZXByb2oifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773684.65370095</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>1692C0DB-7EFD-4933-96B1-E754DC924F07</string>
+		</dict>
 		<key>16C05DB3-3380-4E43-B15F-7F3224257853</key>
 		<dict>
 			<key>className</key>
@@ -1349,6 +1433,34 @@
 			<string>Build for Previews FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>16C05DB3-3380-4E43-B15F-7F3224257853</string>
+		</dict>
+		<key>1829F950-1770-4EE3-BD87-B09D69E43C2E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1829F950-1770-4EE3-BD87-B09D69E43C2E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX0sImJsdWVwcmludFByb3ZpZGVyX3Byb3ZpZGVyRmlsZVBhdGhTdHJpbmciOiJcL1VzZXJzXC9mYXVhZGFud2FyXC9Qcm9qZWN0XC9GWldlYXRoZXJcL0ZaV2VhdGhlci54Y29kZXByb2oifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773665.36245704</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>1829F950-1770-4EE3-BD87-B09D69E43C2E</string>
 		</dict>
 		<key>18363271-0AD6-413E-94CD-8BF79271F83A</key>
 		<dict>
@@ -1909,6 +2021,34 @@
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>28555E4F-A8B2-4B83-9FD9-A39A88256F03</string>
+		</dict>
+		<key>28751BEF-D04B-4D12-B77E-31656F8E1CAC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>28751BEF-D04B-4D12-B77E-31656F8E1CAC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50VmFyaWFudCI6eyJnZW5lcmljIjp7fX0sImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZmF1YWRhbndhclwvUHJvamVjdFwvRlpXZWF0aGVyXC9GWldlYXRoZXIueGNvZGVwcm9qIiwidHlwZSI6eyJibHVlcHJpbnQiOnt9fSwiYmx1ZXByaW50X2JsdWVwcmludElkZW50aWZpZXIiOiJCNDc4RjExRjI4RjZFNkEzMDA2NjFCRDUifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773684.65370095</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>28751BEF-D04B-4D12-B77E-31656F8E1CAC</string>
 		</dict>
 		<key>2887E785-2757-47E9-8D73-453883D6B523</key>
 		<dict>
@@ -3645,6 +3785,34 @@
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>4E60E8C5-2D96-42B1-B555-C46DAE29082B</string>
+		</dict>
+		<key>4FB6ABDD-FD1F-451D-AAF8-3597D3E58CE6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4FB6ABDD-FD1F-451D-AAF8-3597D3E58CE6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX0sImJsdWVwcmludFByb3ZpZGVyX3Byb3ZpZGVyRmlsZVBhdGhTdHJpbmciOiJcL1VzZXJzXC9mYXVhZGFud2FyXC9Qcm9qZWN0XC9GWldlYXRoZXJcL0ZaV2VhdGhlci54Y29kZXByb2oifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773689.57719195</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>4FB6ABDD-FD1F-451D-AAF8-3597D3E58CE6</string>
 		</dict>
 		<key>4FC5557A-BC31-470C-8C67-F1CE2B4CDF37</key>
 		<dict>
@@ -6894,6 +7062,34 @@
 			<key>uniqueIdentifier</key>
 			<string>93471B0A-7884-49D9-9AEF-5507BAF8319B</string>
 		</dict>
+		<key>934A3743-164E-48BB-AB9E-F35F5DD598C9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>934A3743-164E-48BB-AB9E-F35F5DD598C9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>687773689.57719195</real>
+			<key>timeStoppedRecording</key>
+			<real>687773690.344069</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>934A3743-164E-48BB-AB9E-F35F5DD598C9</string>
+		</dict>
 		<key>940AC783-BF73-4B45-A9C2-B1538D173C90</key>
 		<dict>
 			<key>className</key>
@@ -9526,6 +9722,34 @@
 			<key>uniqueIdentifier</key>
 			<string>CD533EE3-03F4-4944-9959-7F4BFE8B7FE2</string>
 		</dict>
+		<key>CD93381B-95FF-41EB-A6C0-2465E184F060</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CD93381B-95FF-41EB-A6C0-2465E184F060.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50VmFyaWFudCI6eyJnZW5lcmljIjp7fX0sImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZmF1YWRhbndhclwvUHJvamVjdFwvRlpXZWF0aGVyXC9GWldlYXRoZXIueGNvZGVwcm9qIiwidHlwZSI6eyJibHVlcHJpbnQiOnt9fSwiYmx1ZXByaW50X2JsdWVwcmludElkZW50aWZpZXIiOiJCNDc4RjExRjI4RjZFNkEzMDA2NjFCRDUifQ==</string>
+			<key>timeStartedRecording</key>
+			<real>687773665.36245704</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>CD93381B-95FF-41EB-A6C0-2465E184F060</string>
+		</dict>
 		<key>CDAB0FE5-52BB-458F-88FF-6F1CF223F75C</key>
 		<dict>
 			<key>className</key>
@@ -11429,6 +11653,34 @@
 			<string>Build for Previews FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>F00BFB4B-58C8-4CAD-AAA8-8F5449899EC7</string>
+		</dict>
+		<key>F177476C-D52D-43AD-AFD1-26D2CBC4FFAA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F177476C-D52D-43AD-AFD1-26D2CBC4FFAA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>eyJ0eXBlIjp7ImJ1aWxkU3lzdGVtVGFzayI6e319LCJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCJ9</string>
+			<key>timeStartedRecording</key>
+			<real>687773684.65370095</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>F177476C-D52D-43AD-AFD1-26D2CBC4FFAA</string>
 		</dict>
 		<key>F29FCCCC-F3EA-4765-9215-B9E287161004</key>
 		<dict>

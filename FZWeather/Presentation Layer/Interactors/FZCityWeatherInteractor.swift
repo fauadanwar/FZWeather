@@ -28,7 +28,7 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
                 let lon = coordinates.longitude
                 let apiService = FZWebServiceUtility.shared
                 let forecast5Endpoint = "\(FZEndpoints.baseUrl)\(FZEndpoints.forecast5Path)"
-                let daysRequestComponents = FZ5DaysRequestComponents(lat: lat, lon: lon, appid: FZEndpoints.appid)
+                let daysRequestComponents = FZ5DaysRequestComponents(lat: lat, lon: lon, appid: FZAPIKey.appid)
 
                 apiService.getJSON(urlString: forecast5Endpoint, requestQueryItems: daysRequestComponents) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
                     switch result {

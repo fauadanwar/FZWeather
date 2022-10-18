@@ -906,6 +906,51 @@
 			<key>uniqueIdentifier</key>
 			<string>612A0E3F-29A0-4021-9A7B-37CF6ECBAF41</string>
 		</dict>
+		<key>6E48D69A-8391-4889-9AB7-31ACDF1422E2</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D4FEBD35-4155-4FBD-A065-FFD79FD61687</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-FZWeather-2022.10.18_13-12-58-+0530.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687771778.10223198</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>6E48D69A-8391-4889-9AB7-31ACDF1422E2</string>
+		</dict>
 		<key>760E76B5-AB61-4F61-9F2C-02ED4D24FDF9</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
