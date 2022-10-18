@@ -44,7 +44,7 @@
 		B478F1F528FC827400661BD5 /* FZ3HrWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F428FC827400661BD5 /* FZ3HrWeatherView.swift */; };
 		B478F1F728FC8AC800661BD5 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F628FC8AC800661BD5 /* UIApplication+Extension.swift */; };
 		B478F1F928FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1F828FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift */; };
-		B478F1FB28FD201B00661BD5 /* FZ5DaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FA28FD201B00661BD5 /* FZ5DaysWeather.swift */; };
+		B478F1FB28FD201B00661BD5 /* FZCityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */; };
 		B478F1FD28FD2A6600661BD5 /* FZSnow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FC28FD2A6600661BD5 /* FZSnow.swift */; };
 		B478F1FF28FD3B1F00661BD5 /* FZEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */; };
 		B478F20128FD403B00661BD5 /* FZ5DaysRequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */; };
@@ -109,7 +109,7 @@
 		B478F1F428FC827400661BD5 /* FZ3HrWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ3HrWeatherView.swift; sourceTree = "<group>"; };
 		B478F1F628FC8AC800661BD5 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		B478F1F828FD17CE00661BD5 /* FZWeatherDatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZWeatherDatabaseHandler.swift; sourceTree = "<group>"; };
-		B478F1FA28FD201B00661BD5 /* FZ5DaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ5DaysWeather.swift; sourceTree = "<group>"; };
+		B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityWeather.swift; sourceTree = "<group>"; };
 		B478F1FC28FD2A6600661BD5 /* FZSnow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZSnow.swift; sourceTree = "<group>"; };
 		B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZEndpoints.swift; sourceTree = "<group>"; };
 		B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZ5DaysRequestComponents.swift; sourceTree = "<group>"; };
@@ -276,7 +276,8 @@
 			children = (
 				B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */,
 				B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */,
-				B478F1FA28FD201B00661BD5 /* FZ5DaysWeather.swift */,
+				B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */,
+				B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */,
 				B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */,
 				B478F1D228FC334300661BD5 /* FZWeather.swift */,
 				B478F1D828FC339800661BD5 /* FZList.swift */,
@@ -289,7 +290,6 @@
 				B478F1E028FC3AD600661BD5 /* FZSys.swift */,
 				B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */,
 				B478F1E428FC3B2700661BD5 /* FZWind.swift */,
-				B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -456,7 +456,7 @@
 				B478F1E528FC3B2700661BD5 /* FZWind.swift in Sources */,
 				B478F1DB28FC3A8A00661BD5 /* FZClouds.swift in Sources */,
 				B478F16428F7EE3B00661BD5 /* FZCityWeatherRouter.swift in Sources */,
-				B478F1FB28FD201B00661BD5 /* FZ5DaysWeather.swift in Sources */,
+				B478F1FB28FD201B00661BD5 /* FZCityWeather.swift in Sources */,
 				B478F1E928FC582B00661BD5 /* FZGeocoderUtility.swift in Sources */,
 				B478F20328FD50AF00661BD5 /* FZDaysWeather.swift in Sources */,
 				B4250A1328FDCD0000526A67 /* FZLazyImageView.swift in Sources */,

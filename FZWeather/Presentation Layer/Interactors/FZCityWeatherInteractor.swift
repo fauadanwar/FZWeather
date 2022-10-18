@@ -13,12 +13,12 @@ public enum FZWeatherError: Error {
 
 protocol FZCityWeatherInteractorProtocol {
     
-    func getWeather(location: String, completion: @escaping (Result<FZ5DaysWeather, FZWeatherError>) -> Void)
+    func getWeather(location: String, completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void)
 }
 
 class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
     
-    func getWeather(location: String, completion: @escaping (Result<FZ5DaysWeather, FZWeatherError>) -> Void)
+    func getWeather(location: String, completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void)
     {
         let geocoderUtility = FZGeocoderUtility()
         geocoderUtility.getCoordinates(location: location) { result in
@@ -33,8 +33,8 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
                 apiService.getJSON(urlString: forecast5Endpoint, requestQueryItems: daysRequestComponents) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
                     switch result {
                     case .success(let weather):
-                        if let days5Weather = weather.convertToFZ5DaysWeather() {
-                            completion(.success(days5Weather))
+                        if let cityWeather = weather.convertToFZCityWeather(location: location) {
+                            completion(.success(cityWeather))
                         } else {
                             completion(.failure(.error(NSLocalizedString("Unable to parse response", comment: ""))))
                         }

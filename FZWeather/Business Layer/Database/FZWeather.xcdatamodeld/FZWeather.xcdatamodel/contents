@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FZCDCity" representedClassName="FZCDCity" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sunrise" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sunset" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="toCityWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDCityWeather" inverseName="toCity" inverseEntity="FZCDCityWeather"/>
+        <relationship name="toCoord" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FZCDCoord" inverseName="toCity" inverseEntity="FZCDCoord"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="FZCDCityWeather" representedClassName="FZCDCityWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <relationship name="toCity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDCity" inverseName="toCityWeather" inverseEntity="FZCDCity"/>
+        <relationship name="toDaysWeather" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FZCDDaysWeather" inverseName="toCityWeather" inverseEntity="FZCDDaysWeather"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="location"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="FZCDClouds" representedClassName="FZCDClouds" syncable="YES" codeGenerationType="class">
+        <attribute name="all" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toClouds" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDCoord" representedClassName="FZCDCoord" syncable="YES" codeGenerationType="class">
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toCity" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FZCDCity" inverseName="toCoord" inverseEntity="FZCDCity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="lat"/>
+                <constraint value="lon"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="FZCDDaysWeather" representedClassName="FZCDDaysWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="dt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="toCityWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDCityWeather" inverseName="toDaysWeather" inverseEntity="FZCDCityWeather"/>
+        <relationship name="toList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toDaysWeather" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDFZSnow" representedClassName="FZCDFZSnow" syncable="YES" codeGenerationType="class">
+        <attribute name="the3H" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toSnow" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDList" representedClassName="FZCDList" syncable="YES" codeGenerationType="class">
+        <attribute name="dt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dtTxt" optional="YES" attributeType="String"/>
+        <attribute name="pop" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="toClouds" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDClouds" inverseName="toList" inverseEntity="FZCDClouds"/>
+        <relationship name="toDaysWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDDaysWeather" inverseName="toList" inverseEntity="FZCDDaysWeather"/>
+        <relationship name="toMain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDMain" inverseName="toList" inverseEntity="FZCDMain"/>
+        <relationship name="toRain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDRain" inverseName="toList" inverseEntity="FZCDRain"/>
+        <relationship name="toSnow" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDFZSnow" inverseName="toList" inverseEntity="FZCDFZSnow"/>
+        <relationship name="toSys" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDSys" inverseName="toList" inverseEntity="FZCDSys"/>
+        <relationship name="toWeatherElement" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FZCDWeatherElement" inverseName="toList" inverseEntity="FZCDWeatherElement"/>
+        <relationship name="toWind" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDWind" inverseName="toList" inverseEntity="FZCDWind"/>
+    </entity>
+    <entity name="FZCDMain" representedClassName="FZCDMain" syncable="YES" codeGenerationType="class">
+        <attribute name="feelsLike" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="grndLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seaLevel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tempKf" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tempMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tempMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="FZCDList" inverseName="toMain" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDRain" representedClassName="FZCDRain" syncable="YES" codeGenerationType="class">
+        <attribute name="the3H" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toRain" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDSys" representedClassName="FZCDSys" syncable="YES" codeGenerationType="class">
+        <attribute name="pod" optional="YES" attributeType="String"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toSys" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDWeatherElement" representedClassName="FZCDWeatherElement" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="main" optional="YES" attributeType="String"/>
+        <attribute name="weatherDescription" optional="YES" attributeType="String"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toWeatherElement" inverseEntity="FZCDList"/>
+    </entity>
+    <entity name="FZCDWind" representedClassName="FZCDWind" syncable="YES" codeGenerationType="class">
+        <attribute name="deg" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gust" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FZCDList" inverseName="toWind" inverseEntity="FZCDList"/>
+    </entity>
 </model>

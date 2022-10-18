@@ -21,7 +21,7 @@ extension FZWeather
         return FZWeather(cod: "200", message: 0, cnt: 2, list: FZList.listModels(), city: FZCity.cityModels())
     }
     
-    func convertToFZ5DaysWeather() -> FZ5DaysWeather?
+    func convertToFZCityWeather(location: String) -> FZCityWeather?
     {
         var timeListArray = [FZList]()
         var dayListArray = [FZDaysWeather]()
@@ -46,6 +46,6 @@ extension FZWeather
         }
         dayListArray.append(FZDaysWeather(list: timeListArray, dt: curruntDay!))
         
-        return FZ5DaysWeather(daysWeather: dayListArray, city: self.city)
+        return FZCityWeather(daysWeather: dayListArray, city: self.city, location: location)
     }
 }

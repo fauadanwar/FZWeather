@@ -210,6 +210,40 @@
 			<key>uniqueIdentifier</key>
 			<string>0D8F782A-FFBF-4839-BE71-C668A11B176D</string>
 		</dict>
+		<key>0ECBFFE2-85F2-45F7-8E0D-457B6DA4E7D2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0ECBFFE2-85F2-45F7-8E0D-457B6DA4E7D2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687770317.15760505</real>
+			<key>timeStoppedRecording</key>
+			<real>687770323.80849004</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>0ECBFFE2-85F2-45F7-8E0D-457B6DA4E7D2</string>
+		</dict>
 		<key>123BF4FD-1D53-4212-95E3-8ABB30F730DB</key>
 		<dict>
 			<key>className</key>
@@ -3881,6 +3915,40 @@
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
 			<string>D3387DB8-2138-4122-9A34-E586CA2E0B56</string>
+		</dict>
+		<key>D4FEBD35-4155-4FBD-A065-FFD79FD61687</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D4FEBD35-4155-4FBD-A065-FFD79FD61687.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687771778.10243404</real>
+			<key>timeStoppedRecording</key>
+			<real>687771782.62979698</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>D4FEBD35-4155-4FBD-A065-FFD79FD61687</string>
 		</dict>
 		<key>D60529B6-56A2-4D38-ADD2-6195DC6A9FD3</key>
 		<dict>

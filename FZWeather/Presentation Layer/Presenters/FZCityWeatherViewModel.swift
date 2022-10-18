@@ -46,13 +46,13 @@ import SwiftUI
             dailyWeatherViewModel = []
         } else {
             isLoading = true
-            weatherInteractor?.getWeather(location: location, completion: { [weak self] (result: Result<FZ5DaysWeather, FZWeatherError>) in
+            weatherInteractor?.getWeather(location: location, completion: { [weak self] (result: Result<FZCityWeather, FZWeatherError>) in
                 switch result {
                 case .success(let daysWeather):
                     DispatchQueue.main.async {
                         self?.isLoading = false
-                        if let location = self?.location, location.count > 0 {
-                            self?.cityViewModel = FZCityViewModel(city: daysWeather.city, name: location)
+                        if daysWeather.location.count > 0 {
+                            self?.cityViewModel = FZCityViewModel(city: daysWeather.city, name: daysWeather.location)
                         }
                         self?.dailyWeatherViewModel = daysWeather.daysWeather.map { FZDailyWeatherViewModel(daysWeather: $0, system: self?.system ?? 0)}
                     }
