@@ -43,7 +43,7 @@ import SwiftUI
     func getWeather() {
         storageLocation = location
         UIApplication.shared.endEditing()
-        if self.userLocation == "" {
+        if location == "" {
             dailyWeatherViewModel = []
             cityViewModel = nil
             weatherInteractor?.getWeatherForUserLocation { [weak self] (result: Result<FZCityWeather, FZWeatherError>) in
@@ -66,10 +66,6 @@ import SwiftUI
                 }
             }
         } else {
-            if location == ""
-            {
-                location = self.userLocation
-            }
             isLoading = true
             weatherInteractor?.getWeather(location: location, completion: { [weak self] (result: Result<FZCityWeather, FZWeatherError>) in
                 switch result {

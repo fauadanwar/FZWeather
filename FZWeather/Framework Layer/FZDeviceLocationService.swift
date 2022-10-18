@@ -14,7 +14,7 @@ import CoreLocation
 class FZDeviceLocationService: NSObject, CLLocationManagerDelegate, ObservableObject {
 
     var coordinatesPublisher = PassthroughSubject<CLLocation, Error>()
-    var deniedLocationAccessPublisher = PassthroughSubject<Void, Never>()
+    var deniedLocationAccessPublisher = PassthroughSubject<CLAuthorizationStatus, Never>()
 
     private override init() {
         super.init()
@@ -44,7 +44,7 @@ class FZDeviceLocationService: NSObject, CLLocationManagerDelegate, ObservableOb
             locationManager.startUpdatingLocation()
             
         default:
-            deniedLocationAccessPublisher.send()
+            deniedLocationAccessPublisher.send(locationManager.authorizationStatus)
         }
     }
 
@@ -56,7 +56,7 @@ class FZDeviceLocationService: NSObject, CLLocationManagerDelegate, ObservableOb
             
         default:
             manager.stopUpdatingLocation()
-            deniedLocationAccessPublisher.send()
+            deniedLocationAccessPublisher.send(manager.authorizationStatus)
         }
     }
 

@@ -58,8 +58,15 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
     func observeDeniedLocationAccess(completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void) {
         deviceLocationService.deniedLocationAccessPublisher
             .receive(on: DispatchQueue.main)
-            .sink {
-                completion(.failure(.error(NSLocalizedString("Location access denied", comment: ""))))
+            .sink { authorizationStatus in
+                
+                switch authorizationStatus
+                {
+                case .restricted, .denied:
+                    completion(.failure(.error(NSLocalizedString("Location access denied", comment: ""))))
+                default:
+                    print("waiting for location access")
+                }
             }
             .store(in: &tokens)
     }

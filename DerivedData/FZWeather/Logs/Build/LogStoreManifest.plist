@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>002DF8E5-3B42-4BC5-80F0-0C9724CAA578</key>
+		<key>04746062-BA26-4FAA-9240-1EEEC2F8C6D3</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,109 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>002DF8E5-3B42-4BC5-80F0-0C9724CAA578.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FZWeather project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FZWeather</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FZWeather</string>
-			<key>timeStartedRecording</key>
-			<real>687778127.645257</real>
-			<key>timeStoppedRecording</key>
-			<real>687778128.22859299</real>
-			<key>title</key>
-			<string>Build FZWeather</string>
-			<key>uniqueIdentifier</key>
-			<string>002DF8E5-3B42-4BC5-80F0-0C9724CAA578</string>
-		</dict>
-		<key>07F400D2-7FB4-418E-9B40-9AFBBB089C9C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>07F400D2-7FB4-418E-9B40-9AFBBB089C9C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FZWeather project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FZWeather</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FZWeather</string>
-			<key>timeStartedRecording</key>
-			<real>687778117.82362103</real>
-			<key>timeStoppedRecording</key>
-			<real>687778118.26865494</real>
-			<key>title</key>
-			<string>Build FZWeather</string>
-			<key>uniqueIdentifier</key>
-			<string>07F400D2-7FB4-418E-9B40-9AFBBB089C9C</string>
-		</dict>
-		<key>5AC81D6E-668B-47FD-9EC4-3F594F982E3C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5AC81D6E-668B-47FD-9EC4-3F594F982E3C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FZWeather project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FZWeather</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Clean FZWeather</string>
-			<key>timeStartedRecording</key>
-			<real>687778123.52107</real>
-			<key>timeStoppedRecording</key>
-			<real>687778123.58535099</real>
-			<key>title</key>
-			<string>Clean FZWeather</string>
-			<key>uniqueIdentifier</key>
-			<string>5AC81D6E-668B-47FD-9EC4-3F594F982E3C</string>
-		</dict>
-		<key>60697536-A4A1-4D3D-8504-C38946398D4B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>60697536-A4A1-4D3D-8504-C38946398D4B.xcactivitylog</string>
+			<string>04746062-BA26-4FAA-9240-1EEEC2F8C6D3.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +32,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687781545.93755198</real>
+			<real>687790539.99551797</real>
 			<key>timeStoppedRecording</key>
-			<real>687781549.24574804</real>
+			<real>687790540.17505395</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>60697536-A4A1-4D3D-8504-C38946398D4B</string>
+			<string>04746062-BA26-4FAA-9240-1EEEC2F8C6D3</string>
 		</dict>
-		<key>657242C3-7F8E-4213-A6A5-7A0CF133D0D9</key>
+		<key>19FDB413-6CAF-47A8-808F-B2BA362CFADB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -151,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>657242C3-7F8E-4213-A6A5-7A0CF133D0D9.xcactivitylog</string>
+			<string>19FDB413-6CAF-47A8-808F-B2BA362CFADB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,15 +66,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687778472.03922904</real>
+			<real>687790386.87656903</real>
 			<key>timeStoppedRecording</key>
-			<real>687778472.25222301</real>
+			<real>687790391.72301304</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>657242C3-7F8E-4213-A6A5-7A0CF133D0D9</string>
+			<string>19FDB413-6CAF-47A8-808F-B2BA362CFADB</string>
 		</dict>
-		<key>9E430D9D-E714-41CB-8CE3-F1F4F3DA5C8A</key>
+		<key>564F0453-3BAC-4225-AAC6-87EEE61D9075</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -185,75 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9E430D9D-E714-41CB-8CE3-F1F4F3DA5C8A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FZWeather project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FZWeather</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FZWeather</string>
-			<key>timeStartedRecording</key>
-			<real>687777762.00702</real>
-			<key>timeStoppedRecording</key>
-			<real>687777763.94758201</real>
-			<key>title</key>
-			<string>Build FZWeather</string>
-			<key>uniqueIdentifier</key>
-			<string>9E430D9D-E714-41CB-8CE3-F1F4F3DA5C8A</string>
-		</dict>
-		<key>A7A26A0E-BB21-458C-B402-26910D44AF16</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>A7A26A0E-BB21-458C-B402-26910D44AF16.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FZWeather project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FZWeather</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build FZWeather</string>
-			<key>timeStartedRecording</key>
-			<real>687776517.15721405</real>
-			<key>timeStoppedRecording</key>
-			<real>687776517.94606698</real>
-			<key>title</key>
-			<string>Build FZWeather</string>
-			<key>uniqueIdentifier</key>
-			<string>A7A26A0E-BB21-458C-B402-26910D44AF16</string>
-		</dict>
-		<key>B9818F3F-1B1C-46C8-9916-57ABD4EB8837</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>B9818F3F-1B1C-46C8-9916-57ABD4EB8837.xcactivitylog</string>
+			<string>564F0453-3BAC-4225-AAC6-87EEE61D9075.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,15 +100,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687778464.40960801</real>
+			<real>687790477.56462598</real>
 			<key>timeStoppedRecording</key>
-			<real>687778469.64347804</real>
+			<real>687790480.5388</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>B9818F3F-1B1C-46C8-9916-57ABD4EB8837</string>
+			<string>564F0453-3BAC-4225-AAC6-87EEE61D9075</string>
 		</dict>
-		<key>C8E143A1-F821-402E-BFCC-E96BDCC59027</key>
+		<key>84923A10-C755-4B2C-A5ED-86E72AB1522A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -287,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C8E143A1-F821-402E-BFCC-E96BDCC59027.xcactivitylog</string>
+			<string>84923A10-C755-4B2C-A5ED-86E72AB1522A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -304,15 +134,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687781549.585163</real>
+			<real>687790882.93633103</real>
 			<key>timeStoppedRecording</key>
-			<real>687781552.12401199</real>
+			<real>687790883.19797695</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>C8E143A1-F821-402E-BFCC-E96BDCC59027</string>
+			<string>84923A10-C755-4B2C-A5ED-86E72AB1522A</string>
 		</dict>
-		<key>E8A77FEF-A873-452A-8AB5-1F7E2A6A82EE</key>
+		<key>87667CA9-3C64-4715-A502-FDEA42E2FFCD</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -321,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>E8A77FEF-A873-452A-8AB5-1F7E2A6A82EE.xcactivitylog</string>
+			<string>87667CA9-3C64-4715-A502-FDEA42E2FFCD.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -338,15 +168,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687781689.98870301</real>
+			<real>687790784.17801595</real>
 			<key>timeStoppedRecording</key>
-			<real>687781691.73526096</real>
+			<real>687790786.07296097</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>E8A77FEF-A873-452A-8AB5-1F7E2A6A82EE</string>
+			<string>87667CA9-3C64-4715-A502-FDEA42E2FFCD</string>
 		</dict>
-		<key>EB4DAC65-F72D-4E06-975A-093684D5E48B</key>
+		<key>8CD0C4EE-C94B-445F-8DEC-2CEDD468937B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -355,13 +185,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>EB4DAC65-F72D-4E06-975A-093684D5E48B.xcactivitylog</string>
+			<string>8CD0C4EE-C94B-445F-8DEC-2CEDD468937B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>FZWeather project</string>
@@ -372,15 +202,15 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687778110.45654702</real>
+			<real>687790504.09931099</real>
 			<key>timeStoppedRecording</key>
-			<real>687778111.04168904</real>
+			<real>687790504.23448598</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>EB4DAC65-F72D-4E06-975A-093684D5E48B</string>
+			<string>8CD0C4EE-C94B-445F-8DEC-2CEDD468937B</string>
 		</dict>
-		<key>F0270903-B1C6-4EED-9F33-03EC58B00596</key>
+		<key>97472CAC-1300-4A79-84AE-5D8BA59A9A0A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -389,13 +219,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>F0270903-B1C6-4EED-9F33-03EC58B00596.xcactivitylog</string>
+			<string>97472CAC-1300-4A79-84AE-5D8BA59A9A0A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>FZWeather project</string>
@@ -406,13 +236,149 @@
 			<key>signature</key>
 			<string>Build FZWeather</string>
 			<key>timeStartedRecording</key>
-			<real>687778447.94834304</real>
+			<real>687789872.22871804</real>
 			<key>timeStoppedRecording</key>
-			<real>687778449.618433</real>
+			<real>687789872.35960996</real>
 			<key>title</key>
 			<string>Build FZWeather</string>
 			<key>uniqueIdentifier</key>
-			<string>F0270903-B1C6-4EED-9F33-03EC58B00596</string>
+			<string>97472CAC-1300-4A79-84AE-5D8BA59A9A0A</string>
+		</dict>
+		<key>B19DCEED-BF92-4789-BE3B-F051FC04B29B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B19DCEED-BF92-4789-BE3B-F051FC04B29B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687790665.82653105</real>
+			<key>timeStoppedRecording</key>
+			<real>687790666.12728405</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>B19DCEED-BF92-4789-BE3B-F051FC04B29B</string>
+		</dict>
+		<key>BD8DC06A-45AF-40C2-A8C4-9129B5AFE03D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BD8DC06A-45AF-40C2-A8C4-9129B5AFE03D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687790844.42483306</real>
+			<key>timeStoppedRecording</key>
+			<real>687790844.69171095</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>BD8DC06A-45AF-40C2-A8C4-9129B5AFE03D</string>
+		</dict>
+		<key>BFE2FE34-6D1E-417A-AE99-69AD09893D82</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BFE2FE34-6D1E-417A-AE99-69AD09893D82.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687789929.38463104</real>
+			<key>timeStoppedRecording</key>
+			<real>687789929.592628</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>BFE2FE34-6D1E-417A-AE99-69AD09893D82</string>
+		</dict>
+		<key>FFF603C2-6984-47F3-A759-2E705218B751</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FFF603C2-6984-47F3-A759-2E705218B751.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FZWeather project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FZWeather</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build FZWeather</string>
+			<key>timeStartedRecording</key>
+			<real>687790522.87963998</real>
+			<key>timeStoppedRecording</key>
+			<real>687790523.49291599</real>
+			<key>title</key>
+			<string>Build FZWeather</string>
+			<key>uniqueIdentifier</key>
+			<string>FFF603C2-6984-47F3-A759-2E705218B751</string>
 		</dict>
 	</dict>
 </dict>
