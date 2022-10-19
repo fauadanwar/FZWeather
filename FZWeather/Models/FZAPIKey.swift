@@ -8,5 +8,5 @@
 import Foundation
 struct FZAPIKey
 {
-    static let appid = //"App key here"
+    static let appid = "b02885498d1d281d9ee77f7e668dee28"
 }
