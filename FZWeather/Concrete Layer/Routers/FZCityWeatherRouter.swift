@@ -18,9 +18,9 @@ class FZCityWeatherRouter: FZCityWeatherRouterProtocol {
     {
         let router = FZCityWeatherRouter()
         let cityWeatherInteractor: FZCityWeatherInteractorProtocol = FZCityWeatherInteractor()
-        let cityWeatherViewModel: FZCityWeatherViewModel = FZCityWeatherViewModel(weatherRouter: router,
+        let cityWeatherPresenter: FZCityWeatherPresenter = FZCityWeatherPresenter(weatherRouter: router,
                                                                                   weatherInteractor: cityWeatherInteractor)
-        let cityWeatherView: FZCityWeatherView = FZCityWeatherView(viewModel: cityWeatherViewModel)
+        let cityWeatherView: FZCityWeatherView = FZCityWeatherView(presenter: cityWeatherPresenter)
         router.entryPoint = cityWeatherView
         return router
     }

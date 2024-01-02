@@ -8,46 +8,46 @@
 import SwiftUI
 
 struct FZ3HrWeatherView: View {
-    var viewModel: FZ3HrWeatherViewModel
+    var presenter: FZ3HrWeatherPresenter
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .center) {
-                FZLazyImageView(lazyImageViewModel: viewModel.lazyImageViewModel)
+                FZLazyImageView(lazyImagePresenter: presenter.lazyImagePresenter)
                 VStack(alignment: .leading, spacing: 5) {
                     HStack {
                         Text("Time:")
                             .font(.headline)
                         Spacer()
-                        Text(viewModel.time)
+                        Text(presenter.time)
                             .fontWeight(.bold)
                     }
                     HStack {
                         Text("Forecast:")
                             .font(.headline)
                         Spacer()
-                        Text(viewModel.overview)
+                        Text(presenter.overview)
                             .fontWeight(.bold)
                     }
                     HStack {
-                        Text(viewModel.temperature)
+                        Text(presenter.temperature)
                         Spacer()
-                        Text(viewModel.wind)
+                        Text(presenter.wind)
                     }
                     HStack {
-                        Text(viewModel.clouds)
+                        Text(presenter.clouds)
                         Spacer()
-                        Text(viewModel.pop)
+                        Text(presenter.pop)
                     }
                 }
             }
             HStack {
-                Text(viewModel.humidity)
-                if let rain = viewModel.rain
+                Text(presenter.humidity)
+                if let rain = presenter.rain
                 {
                     Spacer()
                     Text(rain)
                 }
-                if let snow = viewModel.snow
+                if let snow = presenter.snow
                 {
                     Spacer()
                     Text(snow)
@@ -60,6 +60,6 @@ struct FZ3HrWeatherView: View {
 
 struct FZ3HrWeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        FZ3HrWeatherView(viewModel: FZ3HrWeatherViewModel(system: 0, hourWeather: FZList.listModels().first!))
+        FZ3HrWeatherView(presenter: FZ3HrWeatherPresenter(system: 0, hourWeather: FZList.listModels().first!))
     }
 }

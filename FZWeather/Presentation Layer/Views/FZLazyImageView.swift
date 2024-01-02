@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct FZLazyImageView: View {
-    @ObservedObject var lazyImageViewModel: FZLazyImageViewModel
+    @ObservedObject var lazyImagePresenter: FZLazyImagePresenter
     
     var body: some View {
         VStack{
-            Image(uiImage: lazyImageViewModel.downloadedImage!)
+            Image(uiImage: lazyImagePresenter.downloadedImage!)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 75, height: 75)
@@ -22,6 +22,6 @@ struct FZLazyImageView: View {
 
 struct FZLazyImageView_Previews: PreviewProvider {
     static var previews: some View {
-        FZLazyImageView(lazyImageViewModel: FZLazyImageViewModel(imageUrl: ""))
+        FZLazyImageView(lazyImagePresenter: FZLazyImagePresenter(imageUrl: ""))
     }
 }

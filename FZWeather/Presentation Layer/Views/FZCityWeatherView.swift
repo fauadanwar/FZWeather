@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct FZCityWeatherView: View {
-    @StateObject var viewModel = FZCityWeatherViewModel()
+    @StateObject var presenter = FZCityWeatherPresenter()
     
     var body: some View {
         ZStack {
             NavigationView {
                 VStack {
                     HStack {
-                        TextField("Enter Location", text: $viewModel.location,
+                        TextField("Enter Location", text: $presenter.location,
                                   onCommit: {
-                            viewModel.getWeather()
+                            presenter.getWeather()
                         })
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .overlay (
                             Button(action: {
-                                viewModel.location = ""
-                                viewModel.getWeather()
+                                presenter.location = ""
+                                presenter.getWeather()
                             }) {
                                 Image(systemName: "xmark.circle")
                                     .foregroundColor(.gray)
@@ -32,7 +32,7 @@ struct FZCityWeatherView: View {
                             alignment: .trailing
                         )
                         Button {
-                            viewModel.getWeather()
+                            presenter.getWeather()
                         } label: {
                             Image(systemName: "magnifyingglass.circle.fill")
                                 .font(.title3)
@@ -40,34 +40,34 @@ struct FZCityWeatherView: View {
                     }
                     .padding(.horizontal)
                     List {
-                        if let cityViewModel = viewModel.cityViewModel
+                        if let cityPresenter = presenter.cityPresenter
                         {
-                            NavigationLink(destination: FZCityView(viewModel: cityViewModel)) {
+                            NavigationLink(destination: FZCityView(presenter: cityPresenter)) {
                                 HStack {
                                     Text("City:")
                                     Spacer()
-                                    Text(cityViewModel.name)
+                                    Text(cityPresenter.name)
                                 }
                             }
                         }
-                        ForEach(viewModel.dailyWeatherViewModel, id: \.day) { dailyWeatherViewModel in
-                            Section(header: Text(dailyWeatherViewModel.day)) {
-                                ForEach(dailyWeatherViewModel.hourlyWeatherViewModel, id: \.time) {
-                                    hourlyWeatherViewModel in
-                                    FZ3HrWeatherView(viewModel: hourlyWeatherViewModel)
+                        ForEach(presenter.dailyWeatherPresenter, id: \.day) { dailyWeatherPresenter in
+                            Section(header: Text(dailyWeatherPresenter.day)) {
+                                ForEach(dailyWeatherPresenter.hourlyWeatherPresenter, id: \.time) {
+                                    hourlyWeatherPresenter in
+                                    FZ3HrWeatherView(presenter: hourlyWeatherPresenter)
                                 }
                             }
                         }
                     }
                     .refreshable {
-                        viewModel.getWeather()
+                        presenter.getWeather()
                     }
                     .listStyle(InsetListStyle())
                 }
                 .navigationBarTitle("Weather", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Picker(selection: $viewModel.system, label: Text("Reading Type")) {
+                        Picker(selection: $presenter.system, label: Text("Reading Type")) {
                             Text("°C").tag(0)
                             Text("°F").tag(1)
                         }
@@ -75,7 +75,7 @@ struct FZCityWeatherView: View {
                         .frame(width: 100)
                     }
                 }
-                .alert(item: $viewModel.appError) { appAlert in
+                .alert(item: $presenter.appError) { appAlert in
                     Alert(title: Text("Error"),
                           message: Text("""
                             \(appAlert.errorString)
@@ -86,7 +86,7 @@ struct FZCityWeatherView: View {
                 }
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            if viewModel.isLoading {
+            if presenter.isLoading {
                 ZStack {
                     Color(.white)
                         .opacity(0.3)

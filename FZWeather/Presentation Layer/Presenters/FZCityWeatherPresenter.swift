@@ -1,5 +1,5 @@
 //
-//  FZCityWeatherViewModel.swift
+//  FZCityWeatherPresenter.swift
 //  FZWeather
 //
 //  Created by Fauad Anwar on 13/10/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@MainActor class FZCityWeatherViewModel: ObservableObject
+@MainActor class FZCityWeatherPresenter: ObservableObject
 {
     var weatherRouter: FZCityWeatherRouterProtocol?
     var weatherInteractor: FZCityWeatherInteractorProtocol?
@@ -17,16 +17,16 @@ import SwiftUI
         let errorString: String
     }
     @Published var appError: AppError? = nil
-    @Published var dailyWeatherViewModel: [FZDailyWeatherViewModel] = []
-    var cityViewModel: FZCityViewModel?
+    @Published var dailyWeatherPresenter: [FZDailyWeatherPresenter] = []
+    var cityPresenter: FZCityPresenter?
     @Published var isLoading: Bool = false
     @AppStorage("location") var storageLocation: String = ""
     @AppStorage("user location") var userLocation: String = ""
     @Published var location = ""
     @AppStorage("system") var system: Int = 0 {
         didSet {
-            for i in 0..<dailyWeatherViewModel.count {
-                dailyWeatherViewModel[i].system = system
+            for i in 0..<dailyWeatherPresenter.count {
+                dailyWeatherPresenter[i].system = system
             }
         }
     }
@@ -44,18 +44,18 @@ import SwiftUI
         storageLocation = location
         UIApplication.shared.endEditing()
         if location == "" {
-            dailyWeatherViewModel = []
-            cityViewModel = nil
+            dailyWeatherPresenter = []
+            cityPresenter = nil
             weatherInteractor?.getWeatherForUserLocation { [weak self] (result: Result<FZCityWeather, FZWeatherError>) in
                 switch result {
                 case .success(let daysWeather):
                     DispatchQueue.main.async {
                         self?.isLoading = false
                         if daysWeather.location.count > 0 {
-                            self?.cityViewModel = FZCityViewModel(city: daysWeather.city, name: daysWeather.location)
+                            self?.cityPresenter = FZCityPresenter(city: daysWeather.city, name: daysWeather.location)
                             self?.userLocation = daysWeather.location
                         }
-                        self?.dailyWeatherViewModel = daysWeather.daysWeather.map { FZDailyWeatherViewModel(daysWeather: $0, system: self?.system ?? 0)}
+                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, system: self?.system ?? 0)}
                     }
                 case .failure(let weatherError):
                     switch weatherError {
@@ -73,9 +73,9 @@ import SwiftUI
                     DispatchQueue.main.async {
                         self?.isLoading = false
                         if daysWeather.location.count > 0 {
-                            self?.cityViewModel = FZCityViewModel(city: daysWeather.city, name: daysWeather.location)
+                            self?.cityPresenter = FZCityPresenter(city: daysWeather.city, name: daysWeather.location)
                         }
-                        self?.dailyWeatherViewModel = daysWeather.daysWeather.map { FZDailyWeatherViewModel(daysWeather: $0, system: self?.system ?? 0)}
+                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, system: self?.system ?? 0)}
                     }
                 case .failure(let weatherError):
                     switch weatherError {

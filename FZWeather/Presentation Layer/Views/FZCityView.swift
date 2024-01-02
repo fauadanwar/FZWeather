@@ -9,12 +9,12 @@ import SwiftUI
 import MapKit
 
 struct FZCityView: View {
-    var viewModel: FZCityViewModel
+    var presenter: FZCityPresenter
     @State var region: MKCoordinateRegion
     
-    init(viewModel: FZCityViewModel) {
-        self.viewModel = viewModel
-        self.region = viewModel.region
+    init(presenter: FZCityPresenter) {
+        self.presenter = presenter
+        self.region = presenter.region
     }
     
     var body: some View {
@@ -22,29 +22,29 @@ struct FZCityView: View {
             HStack {
                 Text("Area:")
                 Spacer()
-                Text(viewModel.area)
+                Text(presenter.area)
             }
             HStack {
                 Text("Country:")
                 Spacer()
-                Text(viewModel.country)
+                Text(presenter.country)
             }
             HStack {
                 Text("Latitude:")
                 Spacer()
-                Text("\(viewModel.coord.latitude)")
+                Text("\(presenter.coord.latitude)")
             }
             HStack {
                 Text("Longitude:")
                 Spacer()
-                Text("\(viewModel.coord.longitude)")
+                Text("\(presenter.coord.longitude)")
             }
             
-            Map(coordinateRegion: $region, annotationItems: viewModel.locations) { location in
+            Map(coordinateRegion: $region, annotationItems: presenter.locations) { location in
                 MapMarker(coordinate: location.coordinates)
             }
         }
-        .navigationBarTitle(viewModel.name, displayMode: .inline)
+        .navigationBarTitle(presenter.name, displayMode: .inline)
         .padding()
         Spacer()
     }
@@ -53,6 +53,6 @@ struct FZCityView: View {
 struct FZCityView_Previews: PreviewProvider {
     static var previews: some View {
         let city = FZCity.cityModels()
-        FZCityView(viewModel: FZCityViewModel(city: city, name: "Mumbai"))
+        FZCityView(presenter: FZCityPresenter(city: city, name: "Mumbai"))
     }
 }

@@ -1,5 +1,5 @@
 //
-//  FZCityViewModel.swift
+//  FZCityPresenter.swift
 //  FZWeather
 //
 //  Created by Fauad Anwar on 17/10/22.
@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-struct FZCityViewModel
+struct FZCityPresenter
 {
     var city: FZCity
     var name: String

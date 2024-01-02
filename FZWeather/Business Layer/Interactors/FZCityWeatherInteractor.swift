@@ -75,10 +75,8 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
         let lat = coordinates.latitude
         let lon = coordinates.longitude
         let apiService = FZWebServiceUtility.shared
-        let forecast5Endpoint = "\(FZEndpoints.baseUrl)\(FZEndpoints.forecast5Path)"
-        let daysRequestComponents = FZ5DaysRequestComponents(lat: lat, lon: lon, appid: FZAPIKey.appid)
-        
-        apiService.getJSON(urlString: forecast5Endpoint, requestQueryItems: daysRequestComponents) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
+        let weaklyForcastComponents = FZ5DaysRequestComponents(lat: lat, lon: lon)
+        apiService.getJSON(components: weaklyForcastComponents.makeWeeklyForecastComponents()) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
             switch result {
             case .success(let weather):
                 if let cityWeather = weather.convertToFZCityWeather(location: location) {

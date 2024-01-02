@@ -8,6 +8,7 @@
 import Foundation
 struct FZEndpoints
 {
-    static let baseUrl = "https://api.openweathermap.org/data/"
-    static let forecast5Path = "2.5/forecast"
+    static let scheme = "https"
+    static let host = "api.openweathermap.org"
+    static let path = "/data/2.5"
 }

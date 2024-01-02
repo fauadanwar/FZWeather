@@ -1,5 +1,5 @@
 //
-//  FZLazyImageViewModel.swift
+//  FZLazyImagePresenter.swift
 //  FZWeather
 //
 //  Created by Fauad Anwar on 17/10/22.
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FZLazyImageViewModel : ObservableObject {
+class FZLazyImagePresenter : ObservableObject {
     @Published var downloadedImage = UIImage(systemName: "hourglass.circle")
     var lazyImageInteractor = FZLazyImageInteractor()
 
