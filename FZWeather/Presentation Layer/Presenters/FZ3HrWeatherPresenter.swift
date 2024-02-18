@@ -1,11 +1,11 @@
 //
-//  FZ3HrWeatherViewModel.swift
+//  FZ3HrWeatherPresenter.swift
 //  FZWeather
 //
 //  Created by Fauad Anwar on 16/10/22.
 //
 import Foundation
-struct FZ3HrWeatherViewModel
+struct FZ3HrWeatherPresenter
 {
     var system: Int
     var hourWeather: FZList
@@ -29,11 +29,10 @@ struct FZ3HrWeatherViewModel
     }
 
     func convert(_ temp: Double) -> Double {
-        let celsius = temp - 273.5
         if system == 0 {
-            return celsius
+            return temp
         } else {
-            return celsius * 9 / 5 + 32
+            return temp * 9 / 5 + 32
         }
     }
     
@@ -82,10 +81,10 @@ struct FZ3HrWeatherViewModel
         return "Humidity: \(hourWeather.main.humidity)%"
     }
     
-    var lazyImageViewModel: FZLazyImageViewModel
+    var lazyImagePresenter: FZLazyImagePresenter
     {
         let urlString = "https://openweathermap.org/img/wn/\(hourWeather.weather[0].icon)@2x.png"
-        return FZLazyImageViewModel(imageUrl: urlString)
+        return FZLazyImagePresenter(imageUrl: urlString)
     }
 
 }

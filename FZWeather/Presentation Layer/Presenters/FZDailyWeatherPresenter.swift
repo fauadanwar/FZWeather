@@ -1,25 +1,25 @@
 //
-//  FZDailyWeatherViewModel.swift
+//  FZDailyWeatherPresenter.swift
 //  FZWeather
 //
 //  Created by Fauad Anwar on 16/10/22.
 //
 
 import Foundation
-struct FZDailyWeatherViewModel
+struct FZDailyWeatherPresenter
 {
-    var hourlyWeatherViewModel: [FZ3HrWeatherViewModel] = []
+    var hourlyWeatherPresenter: [FZ3HrWeatherPresenter] = []
     var daysWeather: FZDaysWeather
     var system: Int = 0 {
         didSet {
-            for i in 0..<hourlyWeatherViewModel.count {
-                hourlyWeatherViewModel[i].system = system
+            for i in 0..<hourlyWeatherPresenter.count {
+                hourlyWeatherPresenter[i].system = system
             }
         }
     }
     
     init(daysWeather: FZDaysWeather, system: Int) {
-        self.hourlyWeatherViewModel = daysWeather.list.map { FZ3HrWeatherViewModel(system: system, hourWeather: $0)}
+        self.hourlyWeatherPresenter = daysWeather.list.map { FZ3HrWeatherPresenter(system: system, hourWeather: $0)}
         self.daysWeather = daysWeather
         self.system = system
     }
