@@ -13,7 +13,6 @@
 		B4250A1728FDD94C00526A67 /* FZImageCachingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */; };
 		B4250A1928FDDBFA00526A67 /* FZLazyImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1828FDDBFA00526A67 /* FZLazyImageInteractor.swift */; };
 		B4250A1B28FDF24100526A67 /* FZMapAnnotationLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */; };
-		B4250A1D28FE97CA00526A67 /* FZAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1C28FE97CA00526A67 /* FZAPIKey.swift */; };
 		B4250A1F28FE9D1600526A67 /* FZCDCityWeatherExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1E28FE9D1600526A67 /* FZCDCityWeatherExtention.swift */; };
 		B4250A2128FE9DEA00526A67 /* FZCDCityExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2028FE9DEA00526A67 /* FZCDCityExtention.swift */; };
 		B4250A2328FE9E7100526A67 /* FZCDCoordExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A2228FE9E7100526A67 /* FZCDCoordExtention.swift */; };
@@ -90,7 +89,6 @@
 		B4250A1628FDD94C00526A67 /* FZImageCachingUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZImageCachingUtility.swift; sourceTree = "<group>"; };
 		B4250A1828FDDBFA00526A67 /* FZLazyImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImageInteractor.swift; sourceTree = "<group>"; };
 		B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZMapAnnotationLocation.swift; sourceTree = "<group>"; };
-		B4250A1C28FE97CA00526A67 /* FZAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZAPIKey.swift; sourceTree = "<group>"; };
 		B4250A1E28FE9D1600526A67 /* FZCDCityWeatherExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCityWeatherExtention.swift; sourceTree = "<group>"; };
 		B4250A2028FE9DEA00526A67 /* FZCDCityExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCityExtention.swift; sourceTree = "<group>"; };
 		B4250A2228FE9E7100526A67 /* FZCDCoordExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCDCoordExtention.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		B478F15B28F6E70600661BD5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B4250A1C28FE97CA00526A67 /* FZAPIKey.swift */,
 				B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */,
 				B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */,
 				B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */,
@@ -523,7 +520,6 @@
 				B4250A0F28FDBE4700526A67 /* FZCityViewModel.swift in Sources */,
 				B478F1F328FC817200661BD5 /* FZDailyWeatherView.swift in Sources */,
 				B4250A2B28FEA3BB00526A67 /* FZCDMainExtention.swift in Sources */,
-				B4250A1D28FE97CA00526A67 /* FZAPIKey.swift in Sources */,
 				B478F16628F7EE6900661BD5 /* FZCityWeatherInteractor.swift in Sources */,
 				B478F1DD28FC3A9E00661BD5 /* FZMain.swift in Sources */,
 				B4250A1928FDDBFA00526A67 /* FZLazyImageInteractor.swift in Sources */,
