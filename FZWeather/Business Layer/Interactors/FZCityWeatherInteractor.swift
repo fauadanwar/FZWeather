@@ -15,6 +15,7 @@ public enum FZWeatherError: Error {
 
 protocol FZCityWeatherInteractorProtocol: FZWeatherBaseDataHandlerProtocol {
     func getWeatherForUserLocation(completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void)
+    func getWeather(location: String, completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void)
 }
 
 class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
@@ -25,7 +26,7 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
     func getWeatherForUserLocation(completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void) {
         observeCoordinateUpdates(completion: completion)
         observeDeniedLocationAccess(completion: completion)
-        deviceLocationService.requestLocationUpdates()
+        deviceLocationService.requestLocation()
     }
     
     func observeCoordinateUpdates(completion: @escaping (Result<FZCityWeather, FZWeatherError>) -> Void) {
@@ -75,8 +76,8 @@ class FZCityWeatherInteractor: FZCityWeatherInteractorProtocol {
         let lat = coordinates.latitude
         let lon = coordinates.longitude
         let apiService = FZWebServiceUtility.shared
-        let weaklyForcastComponents = FZ5DaysRequestComponents(lat: lat, lon: lon)
-        apiService.getJSON(components: weaklyForcastComponents.makeWeeklyForecastComponents()) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
+        let weaklyForcastComponents = FZRequestComponentsFromLatAndLon(lat: lat, lon: lon)
+        apiService.getJSON(components: weaklyForcastComponents.urlComponentsFromLatAndLon) { (result: Result<FZWeather, FZWebServiceUtility.FZAPIError>) in
             switch result {
             case .success(let weather):
                 if let cityWeather = weather.convertToFZCityWeather(location: location) {

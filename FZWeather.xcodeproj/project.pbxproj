@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180C9A5D2B89FD8A00917402 /* FZRequestComponentsFromCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */; };
+		180C9A5F2B89FDB200917402 /* FZRequestComponentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */; };
+		180C9A632B8A277500917402 /* TemperatureEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C9A622B8A277500917402 /* TemperatureEnum.swift */; };
 		B4250A0F28FDBE4700526A67 /* FZCityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A0E28FDBE4700526A67 /* FZCityPresenter.swift */; };
 		B4250A1328FDCD0000526A67 /* FZLazyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1228FDCD0000526A67 /* FZLazyImageView.swift */; };
 		B4250A1528FDCE7500526A67 /* FZLazyImagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4250A1428FDCE7500526A67 /* FZLazyImagePresenter.swift */; };
@@ -83,6 +86,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRequestComponentsFromCity.swift; sourceTree = "<group>"; };
+		180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRequestComponentsProtocol.swift; sourceTree = "<group>"; };
+		180C9A622B8A277500917402 /* TemperatureEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureEnum.swift; sourceTree = "<group>"; };
 		B4250A0E28FDBE4700526A67 /* FZCityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCityPresenter.swift; sourceTree = "<group>"; };
 		B4250A1228FDCD0000526A67 /* FZLazyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImageView.swift; sourceTree = "<group>"; };
 		B4250A1428FDCE7500526A67 /* FZLazyImagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZLazyImagePresenter.swift; sourceTree = "<group>"; };
@@ -169,6 +175,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180C9A602B89FDB800917402 /* FZRequestComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */,
+				180C9A5E2B89FDB200917402 /* FZRequestComponentsProtocol.swift */,
+				B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */,
+				180C9A5C2B89FD8A00917402 /* FZRequestComponentsFromCity.swift */,
+			);
+			path = FZRequestComponents;
+			sourceTree = "<group>";
+		};
+		180C9A612B8A000D00917402 /* WeatherResponse */ = {
+			isa = PBXGroup;
+			children = (
+				B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */,
+				B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */,
+				B478F1D228FC334300661BD5 /* FZWeather.swift */,
+				B478F1D828FC339800661BD5 /* FZList.swift */,
+				B478F1DC28FC3A9E00661BD5 /* FZMain.swift */,
+				B478F1D628FC337F00661BD5 /* FZCoord.swift */,
+				B478F1D428FC335F00661BD5 /* FZCity.swift */,
+				B478F1DA28FC3A8A00661BD5 /* FZClouds.swift */,
+				B478F1DE28FC3AC200661BD5 /* FZRain.swift */,
+				B478F1FC28FD2A6600661BD5 /* FZSnow.swift */,
+				B478F1E028FC3AD600661BD5 /* FZSys.swift */,
+				B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */,
+				B478F1E428FC3B2700661BD5 /* FZWind.swift */,
+			);
+			path = WeatherResponse;
+			sourceTree = "<group>";
+		};
 		B478F11728F6E6A300661BD5 = {
 			isa = PBXGroup;
 			children = (
@@ -303,22 +340,10 @@
 		B478F15B28F6E70600661BD5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B478F1FE28FD3B1F00661BD5 /* FZEndpoints.swift */,
-				B478F20028FD403B00661BD5 /* FZ5DaysRequestComponents.swift */,
+				180C9A602B89FDB800917402 /* FZRequestComponents */,
+				180C9A612B8A000D00917402 /* WeatherResponse */,
 				B4250A1A28FDF24100526A67 /* FZMapAnnotationLocation.swift */,
-				B478F1FA28FD201B00661BD5 /* FZCityWeather.swift */,
-				B478F20228FD50AF00661BD5 /* FZDaysWeather.swift */,
-				B478F1D228FC334300661BD5 /* FZWeather.swift */,
-				B478F1D828FC339800661BD5 /* FZList.swift */,
-				B478F1DC28FC3A9E00661BD5 /* FZMain.swift */,
-				B478F1D628FC337F00661BD5 /* FZCoord.swift */,
-				B478F1D428FC335F00661BD5 /* FZCity.swift */,
-				B478F1DA28FC3A8A00661BD5 /* FZClouds.swift */,
-				B478F1DE28FC3AC200661BD5 /* FZRain.swift */,
-				B478F1FC28FD2A6600661BD5 /* FZSnow.swift */,
-				B478F1E028FC3AD600661BD5 /* FZSys.swift */,
-				B478F1E228FC3B0600661BD5 /* FZWeatherElement.swift */,
-				B478F1E428FC3B2700661BD5 /* FZWind.swift */,
+				180C9A622B8A277500917402 /* TemperatureEnum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -418,7 +443,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B478F11F28F6E6A300661BD5 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -526,11 +551,14 @@
 				B4250A1B28FDF24100526A67 /* FZMapAnnotationLocation.swift in Sources */,
 				B478F1E728FC53E300661BD5 /* FZWebServiceUtility.swift in Sources */,
 				B4250A2728FEA2E800526A67 /* FZCDListExtention.swift in Sources */,
+				180C9A5F2B89FDB200917402 /* FZRequestComponentsProtocol.swift in Sources */,
 				B478F12428F6E6A300661BD5 /* FZWeatherApp.swift in Sources */,
 				B45219C328FEA78F0090C2F7 /* FZCDWeatherElementExtention.swift in Sources */,
+				180C9A5D2B89FD8A00917402 /* FZRequestComponentsFromCity.swift in Sources */,
 				B45219C728FEA8890090C2F7 /* FZCDWindExtention.swift in Sources */,
 				B478F1F128FC80C600661BD5 /* FZ3HrWeatherPresenter.swift in Sources */,
 				B4250A1F28FE9D1600526A67 /* FZCDCityWeatherExtention.swift in Sources */,
+				180C9A632B8A277500917402 /* TemperatureEnum.swift in Sources */,
 				B478F1E328FC3B0600661BD5 /* FZWeatherElement.swift in Sources */,
 				B478F1F728FC8AC800661BD5 /* UIApplication+Extension.swift in Sources */,
 				B478F1FD28FD2A6600661BD5 /* FZSnow.swift in Sources */,
@@ -607,6 +635,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -667,6 +696,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

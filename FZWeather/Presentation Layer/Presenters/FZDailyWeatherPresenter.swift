@@ -10,18 +10,18 @@ struct FZDailyWeatherPresenter
 {
     var hourlyWeatherPresenter: [FZ3HrWeatherPresenter] = []
     var daysWeather: FZDaysWeather
-    var system: Int = 0 {
+    var temperatureEnum: TemperatureEnum = .celsius {
         didSet {
             for i in 0..<hourlyWeatherPresenter.count {
-                hourlyWeatherPresenter[i].system = system
+                hourlyWeatherPresenter[i].temperatureEnum = temperatureEnum
             }
         }
     }
     
-    init(daysWeather: FZDaysWeather, system: Int) {
-        self.hourlyWeatherPresenter = daysWeather.list.map { FZ3HrWeatherPresenter(system: system, hourWeather: $0)}
+    init(daysWeather: FZDaysWeather, temperatureEnum: TemperatureEnum) {
+        self.hourlyWeatherPresenter = daysWeather.list.map { FZ3HrWeatherPresenter(temperatureEnum: temperatureEnum, hourWeather: $0)}
         self.daysWeather = daysWeather
-        self.system = system
+        self.temperatureEnum = temperatureEnum
     }
     
     private static var dateFormatter: DateFormatter {

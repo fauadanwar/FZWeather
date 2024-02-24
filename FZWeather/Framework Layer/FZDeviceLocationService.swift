@@ -34,6 +34,20 @@ class FZDeviceLocationService: NSObject, CLLocationManagerDelegate, ObservableOb
         locationManager.stopUpdatingLocation()
     }
     
+    func requestLocation() {
+        switch locationManager.authorizationStatus {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            
+        case .authorizedWhenInUse, .authorizedAlways:
+            locationManager.requestLocation()
+            
+        default:
+            deniedLocationAccessPublisher.send(locationManager.authorizationStatus)
+        }
+    }
+    
     func requestLocationUpdates() {
         switch locationManager.authorizationStatus {
             

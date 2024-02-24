@@ -7,7 +7,7 @@
 import Foundation
 struct FZ3HrWeatherPresenter
 {
-    var system: Int
+    var temperatureEnum: TemperatureEnum
     var hourWeather: FZList
 
     private static var dateFormatter: DateFormatter {
@@ -29,9 +29,10 @@ struct FZ3HrWeatherPresenter
     }
 
     func convert(_ temp: Double) -> Double {
-        if system == 0 {
+        switch temperatureEnum {
+        case .celsius:
             return temp
-        } else {
+        case .fahrenheit:
             return temp * 9 / 5 + 32
         }
     }

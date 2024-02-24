@@ -31,7 +31,7 @@ struct FZDailyWeatherView: View {
 
 struct FZDailyWeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        let presenter = FZDailyWeatherPresenter(daysWeather: FZDaysWeather.daysWeatherModels().first!, system: 0)
+        let presenter = FZDailyWeatherPresenter(daysWeather: FZDaysWeather.daysWeatherModels().first!, temperatureEnum: .celsius)
         FZDailyWeatherView(presenter: presenter)
     }
 }

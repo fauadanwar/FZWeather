@@ -67,9 +67,9 @@ struct FZCityWeatherView: View {
                 .navigationBarTitle("Weather", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Picker(selection: $presenter.system, label: Text("Reading Type")) {
-                            Text("°C").tag(0)
-                            Text("°F").tag(1)
+                        Picker(selection: $presenter.temperatureEnum, label: Text("Reading Type")) {
+                            Text(TemperatureEnum.celsius.localizedName).tag(TemperatureEnum.celsius)
+                            Text(TemperatureEnum.fahrenheit.localizedName).tag(TemperatureEnum.fahrenheit)
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .frame(width: 100)

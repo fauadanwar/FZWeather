@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+protocol FZCityWeatherPresenterProtocol
+{
+    
+}
+
 @MainActor class FZCityWeatherPresenter: ObservableObject
 {
     var weatherRouter: FZCityWeatherRouterProtocol?
@@ -23,10 +28,11 @@ import SwiftUI
     @AppStorage("location") var storageLocation: String = ""
     @AppStorage("user location") var userLocation: String = ""
     @Published var location = ""
-    @AppStorage("system") var system: Int = 0 {
+
+    @AppStorage("system") var temperatureEnum: TemperatureEnum = .celsius {
         didSet {
             for i in 0..<dailyWeatherPresenter.count {
-                dailyWeatherPresenter[i].system = system
+                dailyWeatherPresenter[i].temperatureEnum = temperatureEnum
             }
         }
     }
@@ -55,7 +61,7 @@ import SwiftUI
                             self?.cityPresenter = FZCityPresenter(city: daysWeather.city, name: daysWeather.location)
                             self?.userLocation = daysWeather.location
                         }
-                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, system: self?.system ?? 0)}
+                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, temperatureEnum: self?.temperatureEnum ?? .celsius)}
                     }
                 case .failure(let weatherError):
                     switch weatherError {
@@ -75,7 +81,7 @@ import SwiftUI
                         if daysWeather.location.count > 0 {
                             self?.cityPresenter = FZCityPresenter(city: daysWeather.city, name: daysWeather.location)
                         }
-                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, system: self?.system ?? 0)}
+                        self?.dailyWeatherPresenter = daysWeather.daysWeather.map { FZDailyWeatherPresenter(daysWeather: $0, temperatureEnum: self?.temperatureEnum ?? .celsius)}
                     }
                 case .failure(let weatherError):
                     switch weatherError {

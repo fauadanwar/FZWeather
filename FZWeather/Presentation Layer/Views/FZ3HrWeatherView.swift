@@ -60,6 +60,6 @@ struct FZ3HrWeatherView: View {
 
 struct FZ3HrWeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        FZ3HrWeatherView(presenter: FZ3HrWeatherPresenter(system: 0, hourWeather: FZList.listModels().first!))
+        FZ3HrWeatherView(presenter: FZ3HrWeatherPresenter(temperatureEnum: .celsius, hourWeather: FZList.listModels().first!))
     }
 }
