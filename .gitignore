@@ -1,3 +1,5 @@
 DerivedData/*
 *.DS_Store
 FZWeather/Models/FZRequestComponents/FZEndpoints.swift
+FZWeather.xcodeproj/project.xcworkspace/xcuserdata/fanwar.xcuserdatad/UserInterfaceState.xcuserstate
+FZWeather/Resources/openweathermap.org.cer
